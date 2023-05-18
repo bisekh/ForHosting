@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <label >Username</label>
+    <input type="text" id="Username">
+    <p id="para">Hello</p>
+    <button id="btn" type="submit">Click</button> -->
+    <p>This is paragraph1</p>
+    <p>This is paragraph2</p>
+    <p>This is paragraph3</p>
+    <button onclick=paraGraph()>Click me</button>
+
+<script>
+    //     document.getElementById("btn").onclick = function(){
+    //     let username = document.getElementById("Username").value;
+    //     // document.getElementById("para").innerHTML= username
+    //     document.getElementById("para").append(" " + username)
+        
+
+    // }
+    function paraGraph(){
+        let par= document.getElementsByTagName("p");
+        console.log(par)
+        par[0].style.backgroundColor="blue";
+        par[1].style.fontSize="25px";
+        par[1].style.fontWeight="900";
+        par[1].style.fontStyle="italic";
+    }
+    
+    </script>
+
+</body>
+</html>
